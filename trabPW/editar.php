@@ -10,6 +10,5 @@
     <title>Document</title>
 </head>
 <body>
-    manu
 </body>
 </html>

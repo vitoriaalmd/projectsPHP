@@ -9,7 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" >
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"></script>   
-    <title>Document</title>
+    <title>Trabalho</title>
 </head>
 <body>
 <div class="container">
@@ -28,6 +28,7 @@
                 </div>
             </div>
         </div>
+
         <div class="row mb-3">
             <div class="col-sm-12">
             Nome da escola de origem: <input type="text" placeholder="Nome" class="form-control form-control-sm" required>
@@ -43,11 +44,13 @@
         <br>
         <br>
         <center><h2>Dados do(a) Estudante</h2> </center>
+
         <div class="row mb-3">
             <div class="col-sm-12">
                 Nome Completo: <input type="text" placeholder="Nome" class="form-control form-control-sm" required>
             </div>
         </div>
+
         <div class ="row mb-3">
             <div class="col-sm-3">
                 <label>Sexo:</label> <br>
@@ -80,7 +83,6 @@
                  <input type="date" class="form-control form-control-sm" id="dataNascimento">
                  </div>
                  </div>
-            
         </div>
         
         <div class="row">
@@ -134,6 +136,7 @@
             </div>
         </div>
         <br>
+
         <div class ="row mb-3">
             <div class="col-sm-3">
                  <label>Transporte Escolar Público:</label> <br>
@@ -165,6 +168,7 @@
         <br>
         <br>
         <br>
+
         <div class ="row mb-3">
             <div class="col-sm-3">
              <label>Portador de necessidade especial: </label>  
@@ -180,7 +184,6 @@
             <div class="col-sm-1"></div>
             <div class="col-sm-8">
                 <label>Caso a resposta tenha sido SIM, indique a(s) necessidade especial:</label><br>
-                
                 <div class="form-check form-check-inline">
                     <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="opcao1">
                     <label class="form-check-label" for="inlineCheckbox1">Cegueira</label> 
@@ -218,7 +221,6 @@
 
         <div class ="row mb-3">
             <div class="col-sm-6">
-                
                 <label>Transtorno global de Desenvolvimento:</label><br>
                 <div class="form-check form-check-inline">
                     <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="opcao1">
@@ -278,6 +280,7 @@
             </div>
         </div>
         <br>
+
         <div class="row mb-3">
             <div class="col-sm-3">
                 Nº CPF: <input type="number" class="form-control form-control-sm" placeholder="CPF">
@@ -373,6 +376,7 @@
                 </div> &nbsp
             </div>
         </div>
+
         <div class="row mb-3">
             <div class="col-sm-6">
             Nome do(a) Responsável: <input type="text" placeholder="" class="form-control form-control-sm" required> 
@@ -456,26 +460,9 @@
             </div>
             <div class="col-sm-4">
             Telefone: <input type="number" placeholder="" class="form-control form-control-sm" required> 
-            </div>
-            
+            </div>         
         </div>
-
-
-
-
-
-
-
-        <br>
-        <br>
-        <br>
-
-
-
-
     </form>
 </div>
-
-
 </body>
 </html>
