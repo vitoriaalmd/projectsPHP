@@ -1,0 +1,19 @@
+
+ 
+ .line {
+    width: auto;
+    height: 0.5px;
+    background-color: black;
+    align-items: center;
+}
+
+.cnt{
+    text-align: center;
+}
+
+.container{
+    width: auto;
+    height: auto;
+    border: solid 1px;
+
+} 

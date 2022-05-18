@@ -61,22 +61,22 @@
             <div class="col-sm-3">
                 <label>Sexo:</label> <br>
                 <div class="form-check form-check-inline" required>
-                    <input class="form-check-input" name="inlineRadioOptions" type="radio" id="inlineRadio3" value="option1">
+                    <input class="form-check-input" name="sexo" type="radio" id="inlineRadio3" value="feminino">
                     Feminino
                 </div>
                 <div class="form-check form-check-inline" > 
-                <input class="form-check-input" name="inlineRadioOptions" type="radio" id="inlineRadio4" value="option2">
+                <input class="form-check-input" name="sexo" type="radio" id="inlineRadio4" value="masculino">
                   Masculino
                 </div>
             </div>
                 <div class="col-sm-2">
                     <label>Cartão de Vacinação:</label> <br>
                     <div class="form-check form-check-inline" required>
-                    <input class="form-check-input" name="inlineRadioOptions" type="radio" id="inlineRadio5" value="option1">
+                    <input class="form-check-input" name="CVacina" type="radio" id="inlineRadio5" value="sim">
                     Sim
                 </div>
                 <div class="form-check form-check-inline" > 
-                <input class="form-check-input" name="inlineRadioOptions" type="radio" id="inlineRadio6" value="option2">
+                <input class="form-check-input" name="CVacina" type="radio" id="inlineRadio6" value="nao">
                   Não
                 </div>
                 </div>
@@ -87,7 +87,7 @@
                  <label>Data de Nascimento:</label>
                  <div class="input-group"  required> 
                 
-                 <input type="date" class="form-control form-control-sm" id="dataNascimento">
+                 <input type="date" name="DataN" class="form-control form-control-sm" id="dataNascimento">
                  </div>
                  </div>
         </div>
@@ -96,22 +96,22 @@
             <div class="col-sm-7">
             <label>Nacionalidade:</label> <br>
                 <div class="form-check form-check-inline" required>
-                    <input class="form-check-input" name="inlineRadioOptions" type="radio" id="inlineRadio7" value="option1">
+                    <input class="form-check-input" name="nacionalidade" type="radio" id="inlineRadio7" value="brasileiro">
                     Brasileiro
                 </div>
                 <div class="form-check form-check-inline" > 
-                <input class="form-check-input" name="inlineRadioOptions" type="radio" id="inlineRadio8" value="option2">
+                <input class="form-check-input" name="nacionalidade" type="radio" id="inlineRadio8" value="Bexterior">
                   Brasileiro - nascido no Exterior ou naturalizado
                 </div>
                 <div class="form-check form-check-inline" required>
-                    <input class="form-check-input" name="inlineRadioOptions" type="radio" id="inlineRadio9" value="option3">
+                    <input class="form-check-input" name="nacionalidade" type="radio" id="inlineRadio9" value="estrangeiro">
                     Estrangeiro
                 </div>
             </div>
             <div class="col-sm-5">
                     <br>
                           <label>UF (atual):</label>
-                          <select class= "form-control-sm" required >
+                          <select class= "form-control-sm" name= "uf" required >
                             <option>...</option>
                               <option>AC</option>
                               <option>AL</option>
@@ -148,22 +148,22 @@
             <div class="col-sm-3">
                  <label>Transporte Escolar Público:</label> <br>
                     <div class="form-check form-check-inline" required>
-                    <input class="form-check-input" name="inlineRadioOptions" type="radio" id="inlineRadio10" value="option1">
+                    <input class="form-check-input" name="transporte" type="radio" id="inlineRadio10" value="utiliza">
                     Utiliza
                 </div>
                 <div class="form-check form-check-inline" > 
-                <input class="form-check-input" name="inlineRadioOptions" type="radio" id="inlineRadio11" value="option2">
+                <input class="form-check-input" name="transporte" type="radio" id="inlineRadio11" value="nutiliza">
                   Não utiliza
                 </div>  
             </div>
         <div class="col-sm-4">
                  <label>Poder público responsável pelo transporte:</label> <br>
                     <div class="form-check form-check-inline" required>
-                    <input class="form-check-input" name="inlineRadioOptions" type="radio" id="inlineRadio12" value="option1">
+                    <input class="form-check-input" name="responsaveltransp" type="radio" id="inlineRadio12" value="municipal">
                     <label class="form-check-label" for="inlineRadio12"> Municipal </label>
                 </div> &nbsp
                 <div class="form-check form-check-inline" > 
-                <input class="form-check-input" name="inlineRadioOptions" type="radio" id="inlineRadio13" value="option2">
+                <input class="form-check-input" name="responsaveltransp" type="radio" id="inlineRadio13" value="estadual">
                 <label class="form-check-label" for="inlineRadio13">  Estadual </label>
                 </div>  &nbsp
             </div>
@@ -180,11 +180,11 @@
             <div class="col-sm-3">
              <label>Portador de necessidade especial: </label>  
                     <div class="form-check form-check-inline" required>
-                    <input class="form-check-input" name="inlineRadioOptions" type="radio" id="inlineRadio14" value="option1">
+                    <input class="form-check-input" name="necessidadeesp" type="radio" id="inlineRadio14" value="sim">
                     Sim
                 </div> 
                 <div class="form-check form-check-inline"> 
-                <input class="form-check-input" name="inlineRadioOptions" type="radio" id="inlineRadio15" value="option2">
+                <input class="form-check-input" name="necessidadeesp" type="radio" id="inlineRadio15" value="nao">
                 Não 
                 </div>  
             </div>
@@ -192,35 +192,35 @@
             <div class="col-sm-8">
                 <label>Caso a resposta tenha sido SIM, indique a(s) necessidade especial:</label><br>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="opcao1">
+                    <input class="form-check-input" name="indnecessidade" type="checkbox" id="inlineCheckbox1" value="cegueira">
                     <label class="form-check-label" for="inlineCheckbox1">Cegueira</label> 
                 </div> &nbsp &nbsp
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="opcao2">
+                    <input class="form-check-input" name="indnecessidade" type="checkbox" id="inlineCheckbox2" value="defauditiva">
                     <label class="form-check-label" for="inlineCheckbox2">Deficiêcia Auditiva</label>
                 </div> &nbsp &nbsp
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="inlineDeficienciaIntelectual" value="opcao3">
+                    <input class="form-check-input" name="indnecessidade" type="checkbox" id="inlineDeficienciaIntelectual" value="defintelectual">
                     <label class="form-check-label" for="inlineCheckbox3">Deficiência Intelectual</label>
                 </div> &nbsp &nbsp
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="inlineDeficienciaIntelectual" value="opcao3">
+                    <input class="form-check-input" name="indnecessidade" type="checkbox" id="inlineDeficienciaIntelectual" value="deffisica">
                     <label class="form-check-label" for="inlineCheckbox3">Deficiência Física</label><br>
                 </div> &nbsp &nbsp
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="inlineDeficienciaIntelectual" value="opcao3">
+                    <input class="form-check-input" name="indnecessidade" type="checkbox" id="inlineDeficienciaIntelectual" value="defmultipla">
                     <label class="form-check-label" for="inlineCheckbox3">Deficiência Múltipla</label>
                 </div> &nbsp &nbsp
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="inlineDeficienciaIntelectual" value="opcao3">
+                    <input class="form-check-input" name="indnecessidade" type="checkbox" id="inlineDeficienciaIntelectual" value="baixaVisao">
                     <label class="form-check-label" for="inlineCheckbox3">Baixa Visão</label>
                 </div> &nbsp &nbsp
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="inlineDeficienciaIntelectual" value="opcao3">
+                    <input class="form-check-input" name="indnecessidade" type="checkbox" id="inlineDeficienciaIntelectual" value="defsurdez">
                     <label class="form-check-label" for="inlineCheckbox3">Deficiência Surdez</label>
                 </div> &nbsp &nbsp
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="inlineDeficienciaIntelectual" value="opcao3">
+                    <input class="form-check-input" name="indnecessidade" type="checkbox" id="inlineDeficienciaIntelectual" value="surdocegueira">
                     <label class="form-check-label" for="inlineCheckbox3">Surdocegueira</label>
                 </div> &nbsp &nbsp
             </div>
@@ -231,26 +231,26 @@
             <div class= "col-sm-4">
             <label>Altas habilidades/Superdotação:</label>
             <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="inlineDeficienciaIntelectual" value="opcao3">
+                    <input class="form-check-input" name="altashab" type="checkbox" id="inlineDeficienciaIntelectual" value="altashabi">
                     <label class="form-check-label" for="inlineCheckbox3">Altas habilidades/Superdotação</label>
                 </div> &nbsp &nbsp
         </div>
         <div class="col-sm-6">
                 <label>Transtorno global de Desenvolvimento:</label><br>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio16" value="opcao1">
+                    <input class="form-check-input" type="radio" name="TranstornoGlob" id="inlineRadio16" value="autismoInf">
                     <label class="form-check-label" for="inlineRadio16">Autismo Infantil</label>
                 </div> &nbsp
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio17" value="opcao2">
+                    <input class="form-check-input" type="radio" name="TranstornoGlob" id="inlineRadio17" value="SindromeAsp">
                     <label class="form-check-label" for="inlineRadio17">Síndrome de Asperger</label>
                 </div> <br>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio18" value="opcao3">
+                    <input class="form-check-input" type="radio" name="TranstornoGlob" id="inlineRadio18" value="TranstornoDes">
                     <label class="form-check-label" for="inlineRadio18">Transtorno desintegrativo de infância</label>
                 </div> &nbsp
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio19" value="opcao4">
+                    <input class="form-check-input" type="radio" name="TranstornoGlob" id="inlineRadio19" value="SindromeRett">
                     <label class="form-check-label" for="inlineRadio19"> Síndrome de Rett</label>
                 </div> &nbsp
             </div>
@@ -262,27 +262,27 @@
         <div class="row-mb-3">
             <div class="col-sm-10">
             Raça/Cor: <div class="form-check form-check-inline" required>
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio20" value="opcao1">
+                    <input class="form-check-input" type="radio" name="raca" id="inlineRadio20" value="amarela">
                     <label class="form-check-label" for="inlineRadio20">Amarela</label>
                 </div> &nbsp
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio21" value="opcao2">
+                    <input class="form-check-input" type="radio" name="raca" id="inlineRadio21" value="branca">
                     <label class="form-check-label" for="inlineRadio21">Branca</label>
                 </div> &nbsp
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio22" value="opcao3">
+                    <input class="form-check-input" type="radio" name="raca" id="inlineRadio22" value="NDeclarada">
                     <label class="form-check-label" for="inlineRadio22">Não declarada</label>
                 </div> &nbsp
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio23" value="opcao4">
+                    <input class="form-check-input" type="radio" name="raca" id="inlineRadio23" value="parda">
                     <label class="form-check-label" for="inlineRadio23">Parda</label>
                 </div> &nbsp
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio24" value="opcao5">
+                    <input class="form-check-input" type="radio" name="raca" id="inlineRadio24" value="preta">
                     <label class="form-check-label" for="inlineRadio24">Preta</label>
                 </div> &nbsp
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio25" value="opcao6">
+                    <input class="form-check-input" type="radio" name="raca" id="inlineRadio25" value="indigena">
                     <label class="form-check-label" for="inlineRadio25">Indígena</label>
                 </div> 
             </div>
@@ -302,7 +302,7 @@
             <div class="col-sm-1">
             <label>UF:</label>
             <br>
-                          <select class= "form-control-sm" required >
+                          <select class= "form-control-sm" name = "uff"  required >
                             <option>...</option>
                               <option>AC</option>
                               <option>AL</option>
@@ -333,7 +333,7 @@
                           </select>
         </div>  &nbsp
         <div class="col-sm-2">
-                Data de Expedição: <input type="date" class="form-control form-control-sm" placeholder="">
+                Data de Expedição: <input type="date" name="DataEx" class="form-control form-control-sm" placeholder="">
             </div>
         </div>
         <div class="line"></div>
@@ -367,19 +367,19 @@
         <div class="row-mb-3">
             <div class="col-sm-12">
             Responsável Legal do Aluno(a): <div class="form-check form-check-inline" required>
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio26" value="opcao1">
+                    <input class="form-check-input" type="radio" name="RespLegal" id="inlineRadio26" value="paimae">
                     <label class="form-check-label" for="inlineRadio26">Pai/Mãe</label>
                 </div> &nbsp
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio27" value="opcao2">
+                    <input class="form-check-input" type="radio" name="RespLegal" id="inlineRadio27" value="sopai">
                     <label class="form-check-label" for="inlineRadio27">Só Pai</label>
                 </div> &nbsp
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio28" value="opcao3">
+                    <input class="form-check-input" type="radio" name="RespLegal" id="inlineRadio28" value="somae">
                     <label class="form-check-label" for="inlineRadio28">Só Mãe</label>
                 </div> &nbsp
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio29" value="opcao4">
+                    <input class="form-check-input" type="radio" name="RespLegal" id="inlineRadio29" value="outroresplegal">
                     <label class="form-check-label" for="inlineRadio29">Outro Responsável Legal</label>
                 </div> &nbsp
             </div>
@@ -407,11 +407,11 @@
             <div class="col-sm-5">
                 <br>
             Localização/Zona de Residência: <div class="form-check form-check-inline" required>
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="opcao1">
+                    <input class="form-check-input" type="radio" name="ZonaDeRes" id="inlineRadio1" value="urbana">
                     <label class="form-check-label" for="inlineRadio1">Urbana</label>
                 </div> &nbsp
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="opcao2">
+                    <input class="form-check-input" type="radio" name="ZonaDeRes" id="inlineRadio2" value="rural">
                     <label class="form-check-label" for="inlineRadio2">Rural</label>
                 </div> &nbsp
             </div>
@@ -427,7 +427,7 @@
             <div class="col-sm-1">
             <label>UF:</label>
             <br>
-                          <select class= "form-control-sm" required >
+                          <select class= "form-control-sm" name="ufff" required >
                             <option>...</option>
                               <option>AC</option>
                               <option>AL</option>

@@ -1,4 +1,7 @@
-<?php include'menu.php'?>
+<?php include'menu.php';
+include'conexaobd.php'; 
+include'listaBD.php'; 
+?>
 
 <!DOCTYPE html>
 <html lang="en">
