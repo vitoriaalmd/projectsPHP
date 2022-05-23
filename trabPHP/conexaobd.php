@@ -9,6 +9,6 @@ if (!$conexaobd){
 
     echo "Não conectado ao banco";
 }else{
-        echo "Conectado";
+      //  echo "Conectado";
     }
 ?>

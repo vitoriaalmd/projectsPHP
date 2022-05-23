@@ -1,4 +1,7 @@
-<?php include'menu.php'?>
+<?php include'menu.php';
+include 'salvar.php';
+?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -37,13 +40,13 @@
 
         <div class="row mb-3">
             <div class="col-sm-12">
-            Nome da escola de origem: <input type="text" placeholder="Nome da escola de origem" class="form-control form-control-sm" id="EscOrigem" required>
+            Nome da escola de origem: <input type="text" name="EscOrigem" placeholder="Nome da escola de origem" class="form-control form-control-sm" id="EscOrigem" required>
             </div>
         </div>
 
         <div class="row mb-3">
             <div class="col-sm-12">
-            Município da escola de origem: <input type="text" placeholder="Município da escola de origem" class="form-control form-control-sm" id="MunicEsc" required>
+            Município da escola de origem: <input type="text" name="MunEsc" placeholder="Município da escola de origem" class="form-control form-control-sm" id="MunicEsc" required>
             </div>
         </div>
         <div class="line"></div>
@@ -53,7 +56,7 @@
         <h2 class="cnt">Dados do(a) Estudante</h2>
         <div class="row mb-3">
             <div class="col-sm-12">
-                Nome Completo: <input type="text" placeholder="Nome" class="form-control form-control-sm" required>
+                Nome Completo: <input type="text" name="nome" placeholder="Nome" class="form-control form-control-sm" required>
             </div>
         </div>
 
@@ -81,7 +84,7 @@
                 </div>
                 </div>
                 <div class="col-sm-4">
-                Nº do Cartão SUS: <input type="text" placeholder="000 0000 000 0000" class="form-control form-control-sm" id = "SUS" maxlength="15" oninput="mascaraa('sus')" required>  
+                Nº do Cartão SUS: <input type="text" name="CartSUS" placeholder="000 0000 000 0000" class="form-control form-control-sm" id = "SUS" maxlength="15" oninput="mascaraa('sus')" required>  
                 </div>
             <div class="col-sm-3">
                  <label>Data de Nascimento:</label>
@@ -168,7 +171,7 @@
                 </div>  &nbsp
             </div>
             <div class="col-sm-5">
-                Email do Aluno: <input type="email" placeholder="eeep@eeep.com" class="form-control form-control-sm" id="email" required>
+                Email do Aluno: <input type="email" name="email" placeholder="eeep@eeep.com" class="form-control form-control-sm" id="email" required>
             </div>
         </div>
        <div class="line"></div>
@@ -291,13 +294,13 @@
 
         <div class="row mb-3">
             <div class="col-sm-3">
-                Nº CPF: <input type="text" class="form-control form-control-sm" placeholder="000.000.000-00" id="CPF" maxlength="11" oninput="mascaraa('cpf')" required>
+                Nº CPF: <input type="text" name="CPFaluno" class="form-control form-control-sm" placeholder="000.000.000-00" id="CPF" maxlength="11" oninput="mascaraa('cpf')" required>
             </div>  &nbsp  &nbsp
             <div class="col-sm-3">
-                Nº RG: <input type="text" class="form-control form-control-sm" placeholder="0000000000-0" id="rg" required>
+                Nº RG: <input type="text" name="RGaluno" class="form-control form-control-sm" placeholder="0000000000-0" id="rg" required>
             </div>  &nbsp  &nbsp
             <div class="col-sm-2">
-                Orgão Exp. : <input type="text" class="form-control form-control-sm" placeholder="" id="orgExp" required>
+                Orgão Exp. : <input type="text" name="OrgaoExp" class="form-control form-control-sm" placeholder="" id="orgExp" required>
             </div>  &nbsp  &nbsp
             <div class="col-sm-1">
             <label>UF:</label>
@@ -342,25 +345,25 @@
          <h2 class="cnt">Dados dos Pais/Mães/Responsáveis Legais</h2>
         <div class="row mb-3">
             <div class="col-sm-6">
-            Nome da Mãe: <input type="text" placeholder="nome" class="form-control form-control-sm" id="nomeMAE" required> 
+            Nome da Mãe: <input type="text" name="NomeMae" placeholder="nome" class="form-control form-control-sm" id="nomeMAE" required> 
             </div> 
             <div class="col-sm-3">
-            Nº CPF: <input type="text" placeholder="000.000.000-00" class="form-control form-control-sm" id="CPFmae" maxlength="11" oninput="mascaraa('cpf')" required> 
+            Nº CPF: <input type="text" name="CPFmae" placeholder="000.000.000-00" class="form-control form-control-sm" id="CPFmae" maxlength="11" oninput="mascaraa('cpf')" required> 
             </div>
             <div class="col-sm-3">
-            Celular: <input type="text" placeholder="(00) 00000-0000" class="form-control form-control-sm" id="CelularMae" maxlength="11" oninput="mascaraa('TelFixo')" required> 
+            Celular: <input type="text" name="Celmae" placeholder="(00) 00000-0000" class="form-control form-control-sm" id="CelularMae" maxlength="11" oninput="mascaraa('TelFixo')" required> 
             </div>
         </div>
 
         <div class="row mb-3">
             <div class="col-sm-6">
-            Nome do Pai: <input type="text" placeholder="nome" class="form-control form-control-sm" id="nomePai" required> 
+            Nome do Pai: <input type="text" name="Nomepai" placeholder="nome" class="form-control form-control-sm" id="nomePai" required> 
             </div> 
             <div class="col-sm-3">
-            Nº CPF: <input type="text" placeholder="000.000.000-00" class="form-control form-control-sm" id="CPFpai" maxlength="11" oninput="mascaraa('cpf')" required> 
+            Nº CPF: <input type="text" name="CPFpai" placeholder="000.000.000-00" class="form-control form-control-sm" id="CPFpai" maxlength="11" oninput="mascaraa('cpf')" required> 
             </div>
             <div class="col-sm-3">
-            Celular: <input type="text" placeholder="(00) 00000-0000" class="form-control form-control-sm" id="CelularPai" maxlength="11" oninput="mascaraa('TelFixo')" required> 
+            Celular: <input type="text" name="Celpai" placeholder="(00) 00000-0000" class="form-control form-control-sm" id="CelularPai" maxlength="11" oninput="mascaraa('TelFixo')" required> 
             </div>
         </div>
 
@@ -387,22 +390,22 @@
 <br>
         <div class="row mb-3">
             <div class="col-sm-6">
-            Nome do(a) Responsável: <input type="text" placeholder="nome" class="form-control form-control-sm" id="nomeRESP" required> 
+            Nome do(a) Responsável: <input type="text" name="NomeResp" placeholder="nome" class="form-control form-control-sm" id="nomeRESP" required> 
             </div> 
             <div class="col-sm-3">
-            Nº CPF: <input type="text" placeholder="000.000.000-00" class="form-control form-control-sm" id="CPFresp" maxlength="11" oninput="mascaraa('cpf')" required> 
+            Nº CPF: <input type="text" name="CPFresp" placeholder="000.000.000-00" class="form-control form-control-sm" id="CPFresp" maxlength="11" oninput="mascaraa('cpf')" required> 
             </div>
             <div class="col-sm-3">
-            Celular: <input type="text" placeholder="(00) 00000-0000" class="form-control form-control-sm" id="CelularResp" maxlength="11" oninput="mascaraa('TelFixo')" required> 
+            Celular: <input type="text" name="CelResp" placeholder="(00) 00000-0000" class="form-control form-control-sm" id="CelularResp" maxlength="11" oninput="mascaraa('TelFixo')" required> 
             </div>
         </div>
 
         <div class="row mb-3">
             <div class="col-sm-5">
-            Endereço: <input type="text" placeholder="endereço" class="form-control form-control-sm" id="endereco" required> 
+            Endereço: <input type="text" name="End" placeholder="endereço" class="form-control form-control-sm" id="endereco" required> 
             </div> &nbsp &nbsp
             <div class="col-sm-1">
-            Nº: <input type="number" placeholder="" class="form-control form-control-sm" id="numero" required> 
+            Nº: <input type="number" name="NC" placeholder="" class="form-control form-control-sm" id="numero" required> 
             </div> &nbsp &nbsp &nbsp 
             <div class="col-sm-5">
                 <br>
@@ -419,10 +422,10 @@
 
         <div class="row mb-3">
             <div class="col-sm-5">
-            Bairro: <input type="text" placeholder="bairro" class="form-control form-control-sm" id="bairro" required> 
+            Bairro: <input type="text" name="bairro" placeholder="bairro" class="form-control form-control-sm" id="bairro" required> 
             </div>
             <div class="col-sm-3">
-            Município: <input type="text" placeholder="município" class="form-control form-control-sm" id="municipio" required> 
+            Município: <input type="text" name="municipio" placeholder="município" class="form-control form-control-sm" id="municipio" required> 
             </div>
             <div class="col-sm-1">
             <label>UF:</label>
@@ -458,22 +461,22 @@
                           </select>
         </div>
         <div class="col-sm-3">
-            CEP: <input type="text" placeholder="00000-000" class="form-control form-control-sm" id="CEP" maxlength="8" oninput="mascaraa('cep')" required> 
+            CEP: <input type="text" name="cep"  placeholder="00000-000" class="form-control form-control-sm" id="CEP" maxlength="8" oninput="mascaraa('cep')" required> 
             </div>
         </div>
 
         <div class="row mb-3">
             <div class="col-sm-5">
-            Local de Trabalho: <input type="text" placeholder="" class="form-control form-control-sm" id="localTrab" required> 
+            Local de Trabalho: <input type="text" name="LT" placeholder="" class="form-control form-control-sm" id="localTrab" required> 
             </div>
             <div class="col-sm-4">
-            Telefone: <input type="text" placeholder="(00) 00000-0000" class="form-control form-control-sm" id = "CelularLT" maxlength="11" oninput="mascaraa('TelFixo')" required> 
+            Telefone: <input type="text" name="Tel" placeholder="(00) 00000-0000" class="form-control form-control-sm" id = "CelularLT" maxlength="11" oninput="mascaraa('TelFixo')" required> 
             </div>         
         </div>
         <br>
         
         <div class="d-grid gap-2 col-6 mx-auto">
-        <button type="button" class="btn btn-dark">Enviar</button>
+        <button type="submit" class="btn btn-dark">Enviar</button>
         </div>
         <br>
     </form>
