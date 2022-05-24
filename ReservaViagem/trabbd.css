@@ -1,4 +1,7 @@
-
+body{
+    padding-top: 60px;
+    background: #CBD9EA;
+}
  
  .line {
     width: auto;

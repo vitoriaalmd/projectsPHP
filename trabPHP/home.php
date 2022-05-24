@@ -1,4 +1,5 @@
-<?php include'menu.php';
+<?php 
+include 'menu.php';
 include 'salvar.php';
 ?>
 
@@ -23,7 +24,7 @@ include 'salvar.php';
        
       
       <br>
-       <form method="post" action="salvar.php">
+       <form action="salvar.php" method="post" >
 
         <div class="row mb-3">
             <div class="col-sm-12">
@@ -473,10 +474,9 @@ include 'salvar.php';
             Telefone: <input type="text" name="Tel" placeholder="(00) 00000-0000" class="form-control form-control-sm" id = "CelularLT" maxlength="11" oninput="mascaraa('TelFixo')" required> 
             </div>         
         </div>
-        <br>
-        
+        <br>        
         <div class="d-grid gap-2 col-6 mx-auto">
-        <button type="submit" class="btn btn-dark">Enviar</button>
+        <button type="submit" class="btn btn-dark" >Enviar</button>
         </div>
         <br>
     </form>
