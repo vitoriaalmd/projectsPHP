@@ -1,5 +1,11 @@
 body {
-    background: url(http://s2.glbimg.com/nn71ZipVGuMmtbTb7iY35nyIuGM=/620x300/smart/e.glbimg.com/og/ed/f/original/2014/09/08/volta-ao-mundo-shutterstock.jpg);
+    background: url(https://images.unsplash.com/photo-1501446529957-6226bd447c46?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
 }
 #cnt{
     flex-direction: column;
@@ -7,7 +13,7 @@ body {
     text-align: center ;
     align-items: center;
     color:aliceblue;
-    margin-top: 15%;
+    margin-top: 17%;
     height: 100vh;
     font-size: 40px;
 }
@@ -17,3 +23,42 @@ body {
 
 }
 
+.bcgb{
+    background: white;
+}
+
+.cnt{
+    text-align: center;
+}
+
+
+.quadrado{
+    margin: 15px;
+    position: relative;
+    flex-direction: row;
+	display: inline-block;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 30%;
+}
+
+img{
+    border-radius: 20px;
+}
+
+.img-container{  
+    overflow: hidden;
+ }
+ 
+ .img-container img{
+    width: 100%;
+    height: 100%;
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;
+ }
+ 
+ .img-container:hover img{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+ }

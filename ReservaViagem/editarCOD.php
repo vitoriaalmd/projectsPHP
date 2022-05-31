@@ -1,5 +1,46 @@
 <?php
-include 'menu.php';
+include 'conexaoBD.php';
+
+if (isset($_GET['id_usuario'])) {
+    $id_usuario = $_GET['id_usuario'];
+    $sql = mysqli_query($conexaoBD, "SELECT * FROM usuario WHERE id_usuario=$id_usuario");
+
+    $count = (is_array($sql)) ? count($sql) : 1;
+    if ($count) {
+        $n = mysqli_fetch_array($sql);
+        $nome = $n['nome'];
+        $DataN = $n['DataN'];
+        $email = $n['email'];
+        $telefone = $n['telefone'];
+        $paisSai = $n['paisSai'];
+        $paisDes = $n['paisDes'];
+        $DataS =  $n['DataS'];
+        $DataR = $n['DataR'];
+        $classe =  $n['classe'];
+        $servicos =  $n['servicos'];
+    }
+}
+
+
+if (isset($_POST['editarCOD'])) {
+    $id_usuario = $_GET["id_usuario"];
+    $nome = $_POST["nome"];
+    $DataN = $_POST['DataN'];
+    $email = $_POST['email'];
+    $telefone = $_POST['telefone'];
+    $paisSai = $_POST['paisSai'];
+    $paisDes = $_POST['paisDes'];
+    $DataS = $_POST['DataS'];
+    $DataR = $_POST['DataR'];
+    $classe = $_POST['classe'];
+    $servicos = $_POST['servicos'];
+    $query = "UPDATE usuario SET nome = '$nome', DataN = '$DataN', email = '$email', telefone= '$telefone', paisSai= '$paisSai', paisDes= '$paisDes', DataS= '$DataS' , DataR = '$DataR', classe = '$classe', servicos= '$servicos', query= '$query' WHERE id_usuario = $id_usuario";
+
+    $consulta = mysqli_query($conexaoBD, $query);
+
+    header('location: tabela.php');
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -9,31 +50,15 @@ include 'menu.php';
     <meta charset="utf-8">
     <title>Cadastro PHP</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="trabbd.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-
-<div id="cnt">
-        <a href="#form" class="btn btn-dark">RESERVAS</a>
-        <h1 class="cnt2">Viva uma experiência incrível!</h1>
-        <h5>Reserve sua viagem! Venha viver momentos únicos com a gente!</h5>
-    </div>
-
-    <br>
-    <br>
-    <br>
-    <section class="bcgb">  <div class="container">
-        <br>
-        <h1 class="cnt">Formulário para Reserva de Viagem</h1>
-        <h5 class="cnt">Por favor, nos forneça as informações de contato abaixo e faremos a reserva da sua viagem.</h5>
-        <br>
-        <div class="line"></div>
-        <br>
-
-        <form method="post" action="salvar.php" id="form">
-
-            <div class="row mb-1">
+    <div class="container col-md-6 offset-md-3">
+        <h1>Formulário Edição</h1>
+        <form method="post">
+        <div class="row mb-1">
                 <div class="col-sm-9">
                     Nome Completo: <input type="text" class="form-control" placeholder="Nome" name="nome" required>
                 </div>
@@ -119,37 +144,14 @@ include 'menu.php';
             </div>
             <br>
             <div class="d-grid gap-2 col-6 mx-auto">
-             <button type="submit" class="btn btn-dark" id="btnSalvar"  data-bs-toggle="modal" data-bs-target="#exampleModal">
-               Enviar
+             <button type="submit" class="btn btn-dark" id="btnEditar">
+               Editar
              </button>
             </div>
             
             <br>
           </form>
          </div>
-
-         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel"></h5>
-        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-         X
-        </button>
-      </div>
-      <div class="modal-body">
-        Preencha todos os campos!
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-      </div>
-    </div>
-  </div>
-</div>
-            
-    <br>
-    <script src="mask.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"></script>
 </body>
+
 </html>
