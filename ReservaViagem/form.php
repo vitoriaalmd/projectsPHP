@@ -10,6 +10,7 @@ include 'menu.php';
     <title>Cadastro PHP</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="trabbd.css">
+    <script type="text/javascript" src="jquery.js"></script>
 </head>
 
 <body>

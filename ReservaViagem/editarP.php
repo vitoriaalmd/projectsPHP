@@ -11,6 +11,7 @@ include 'conexaobd.php';
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="editar.css">
+	<script type="text/javascript" src="jquery.js"></script>
 </head>
 <body>
 	<br>
@@ -49,8 +50,8 @@ include 'conexaobd.php';
                     <td><?php echo $usuario['classe']; ?></td>
                     <td><?php echo $usuario['servicos']; ?></td>
 					<td>
-						<a href="deletar.php?id=<?php echo $usuario['id_usuario']; ?>" class="btn btn-sm btn-danger " >Excluir</a> <br>
-                        <a href="editarCOD.php?id=<?php echo $usuario['id_usuario']; ?>" class="btn btn-sm btn-warning " >Editar</a>
+						<a href="deletar.php?id_usuario=<?php echo $usuario['id_usuario']; ?>" class="btn btn-sm btn-danger " >Excluir</a> <br>
+                        <a href="editarCOD.php?id_usuario=<?php echo $usuario['id_usuario']; ?>" class="btn btn-sm btn-warning " >Editar</a>
 					</td>
 				</tr>
 

@@ -1,46 +1,6 @@
 <?php
-include 'conexaoBD.php';
-
-if (isset($_GET['id_usuario'])) {
-    $id_usuario = $_GET['id_usuario'];
-    $sql = mysqli_query($conexaoBD, "SELECT * FROM usuario WHERE id_usuario=$id_usuario");
-
-    $count = (is_array($sql)) ? count($sql) : 1;
-    if ($count) {
-        $n = mysqli_fetch_array($sql);
-        $nome = $n['nome'];
-        $DataN = $n['DataN'];
-        $email = $n['email'];
-        $telefone = $n['telefone'];
-        $paisSai = $n['paisSai'];
-        $paisDes = $n['paisDes'];
-        $DataS =  $n['DataS'];
-        $DataR = $n['DataR'];
-        $classe =  $n['classe'];
-        $servicos =  $n['servicos'];
-    }
-}
-
-
-if (isset($_POST['editarCOD'])) {
-    $id_usuario = $_GET["id_usuario"];
-    $nome = $_POST["nome"];
-    $DataN = $_POST['DataN'];
-    $email = $_POST['email'];
-    $telefone = $_POST['telefone'];
-    $paisSai = $_POST['paisSai'];
-    $paisDes = $_POST['paisDes'];
-    $DataS = $_POST['DataS'];
-    $DataR = $_POST['DataR'];
-    $classe = $_POST['classe'];
-    $servicos = $_POST['servicos'];
-    $query = "UPDATE usuario SET nome = '$nome', DataN = '$DataN', email = '$email', telefone= '$telefone', paisSai= '$paisSai', paisDes= '$paisDes', DataS= '$DataS' , DataR = '$DataR', classe = '$classe', servicos= '$servicos', query= '$query' WHERE id_usuario = $id_usuario";
-
-    $consulta = mysqli_query($conexaoBD, $query);
-
-    header('location: tabela.php');
-}
-
+include 'menu.php';
+include 'editarBD.php';
 ?>
 
 <!DOCTYPE html>
@@ -52,20 +12,30 @@ if (isset($_POST['editarCOD'])) {
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="editarCOD.css">
+    <script type="text/javascript" src="jquery.js"></script>
+
 </head>
 
 <body>
-    <div class="container col-md-6 offset-md-3">
-        <h1>Formulário Edição</h1>
-        <form method="post">
+    <br>
+    <div class="container">
+        <br>
+        <h1 class="cnt">Formulário de Edição</h1>
+        <br>
+    <div class="line"></div>
+    <br>
+
+
+        <form method="post" action="editarBD.php">
         <div class="row mb-1">
                 <div class="col-sm-9">
-                    Nome Completo: <input type="text" class="form-control" placeholder="Nome" name="nome" required>
+                    Nome Completo: <input type="text" class="form-control" placeholder="Nome" name="nome" value="<?php echo $nome;?>"required>
                 </div>
                 <div class="col-sm-3">
                     <label>Data de Nascimento:</label>
                     <div class="input-group" required>
-                        <input type="date" name="DataN" class="form-control form-control-sm" id="dataNascimento" required>
+                        <input type="date" name="DataN" class="form-control form-control-sm" id="dataNascimento" value="<?php echo $DataN;?>"required>
                     </div>
                 </div>
             </div>
@@ -74,10 +44,10 @@ if (isset($_POST['editarCOD'])) {
 
             <div class="row mb-3">
                 <div class="col-sm-8">
-                    Email: <input type="email" name="email" placeholder="exemplo@exemplo.com" class="form-control form-control-sm" id="email" required>
+                    Email: <input type="email" name="email" placeholder="exemplo@exemplo.com" class="form-control form-control-sm" id="email" value="<?php echo $email;?>" required>
                 </div>
                 <div class="col-sm-4">
-                    Telefone: <input type="text" name="telefone" placeholder="(00) 00000-0000" class="form-control form-control-sm" id="telefone" maxlength="11" oninput="mascaraa('TelFixo')" required>
+                    Telefone: <input type="text" name="telefone" placeholder="(00) 00000-0000" class="form-control form-control-sm" id="telefone" maxlength="11" oninput="mascaraa('TelFixo')" value="<?php echo $telefone;?>" required>
                 </div>
             </div>
 
@@ -89,10 +59,10 @@ if (isset($_POST['editarCOD'])) {
 
             <div class="row mb-3">
                 <div class="col-sm-6">
-                    País de Saída: <input type="text" class="form-control" placeholder="Brasil" name="paisSai" required>
+                    País de Saída: <input type="text" class="form-control" placeholder="Brasil" name="paisSai" value="<?php echo $paisSai;?>" required>
                 </div>
                 <div class="col-sm-6">
-                    País de Destino: <input type="text" class="form-control" placeholder="Canadá" name="paisDes" required>
+                    País de Destino: <input type="text" class="form-control" placeholder="Canadá" name="paisDes" value="<?php echo $paisDes;?>" required>
                 </div>
             </div>
 
@@ -100,13 +70,13 @@ if (isset($_POST['editarCOD'])) {
                 <div class="col-sm-6">
                     <label>Data de Saída:</label>
                     <div class="input-group" required>
-                        <input type="date" name="DataS" class="form-control form-control-sm" id="dataSaida" required>
+                        <input type="date" name="DataS" class="form-control form-control-sm" id="dataSaida" value="<?php echo $dataS;?>" required>
                     </div>
                 </div>
                 <div class="col-sm-6">
                     <label>Data de Retorno:</label>
                     <div class="input-group" required>
-                        <input type="date" name="DataR" class="form-control form-control-sm" id="dataRetorno" required>
+                        <input type="date" name="DataR" class="form-control form-control-sm" id="dataRetorno" value="<?php echo $dataR;?>" required>
                     </div>
                 </div>
             </div>
@@ -114,7 +84,7 @@ if (isset($_POST['editarCOD'])) {
             <div class="row mb-8">
                 <div class="col sm-5">
                     <label>Classe da Viagem:</label>
-                    <select class="form-control-sm" name="classe" >
+                    <select class="form-control-sm" name="classe" value="<?php echo $classe;?>" required >
                         <option>...</option>
                         <option>Classe Econômica</option>
                         <option>Classe Empresarial</option>
@@ -144,7 +114,7 @@ if (isset($_POST['editarCOD'])) {
             </div>
             <br>
             <div class="d-grid gap-2 col-6 mx-auto">
-             <button type="submit" class="btn btn-dark" id="btnEditar">
+             <button name="editarCOD" type="submit" class="btn btn-dark" id="btnEditar">
                Editar
              </button>
             </div>
@@ -152,6 +122,8 @@ if (isset($_POST['editarCOD'])) {
             <br>
           </form>
          </div>
+
+         <script src="mask.js"></script>
 </body>
 
 </html>

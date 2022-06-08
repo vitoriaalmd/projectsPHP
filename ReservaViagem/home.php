@@ -13,6 +13,7 @@ include 'menu.php';
     <!-- <link href="form.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="form.css">
     <link rel="stylesheet" href="home.css">
+    <script type="text/javascript" src="jquery.js"></script>
     <title>home</title>
 </head>
 
