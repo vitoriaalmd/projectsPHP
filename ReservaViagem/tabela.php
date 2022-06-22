@@ -15,25 +15,14 @@ include 'conexaobd.php';
 	<script type="text/javascript" src="jquery.js"></script>
 	<!-- <script src="jquery-1.7.2.min.js" type="text/javascript"></script> -->
 	<!-- <script src="jquery.quicksearch.js" type="text/javascript"></script> -->
-	<script>
-		$(document).ready(function() {
-			$("#myInput").on("keyup", function() {
-				var value = $(this).val().toLowerCase();
-				$("#myTable tr").filter(function() {
-					$(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-				});
-			});
-		});
-	</script>
+
 </head>
 
 <body>
 	<br>
 	<div class="container">
 		<h1 class="cnt">Lista de Dados</h1>
-		<br>
-		<input id="myInput" type="text" placeholder="Search..">
-		<br>
+	
 		<br>
 		
 		<table class="table table-bordered table-hover">

@@ -32,7 +32,8 @@ include 'conexaobd.php';
                     <th scope="col">Data - Destino</th>
                     <th scope="col">Classe</th>
                     <th scope="col">Serviço(s)</th>
-                    <th scope="col">Funções</th>
+                    <th scope="col">Editar</th>
+					<th scope="col">Excluir</th>
 				</tr>
 			</thead>
 			<?php while ($usuario = mysqli_fetch_assoc($listarSQL)) { ?>
@@ -50,8 +51,10 @@ include 'conexaobd.php';
                     <td><?php echo $usuario['classe']; ?></td>
                     <td><?php echo $usuario['servicos']; ?></td>
 					<td>
-						<a href="deletar.php?id_usuario=<?php echo $usuario['id_usuario']; ?>" class="btn btn-sm btn-danger " >Excluir</a> <br>
                         <a href="editarCOD.php?id_usuario=<?php echo $usuario['id_usuario']; ?>" class="btn btn-sm btn-warning " >Editar</a>
+					</td>
+					<td>
+					<a href="deletar.php?id_usuario=<?php echo $usuario['id_usuario']; ?>" class="btn btn-sm btn-danger " >Excluir</a> <br>
 					</td>
 				</tr>
 

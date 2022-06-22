@@ -1,5 +1,5 @@
 <?php 
-	include 'conexaoBD.php';
+	include 'conexaobd.php';
 
 	if (isset($_GET['id_usuario'])) {
 		$id_usuario = $_GET['id_usuario'];
@@ -22,9 +22,9 @@
 	}
 	
 	
-	if (isset($_POST['editarCOD'])) {
-		$id_usuario = $_GET["id_usuario"];
-		$nome = $_POST["nome"];
+	if (isset($_POST['editarCOD'])) {       /*Duvidas aqui */
+		$id_usuario = $_POST['id_usuario'];
+		$nome = $_POST['nome'];
 		$DataN = $_POST['DataN'];
 		$email = $_POST['email'];
 		$telefone = $_POST['telefone'];
@@ -34,7 +34,8 @@
 		$DataR = $_POST['DataR'];
 		$classe = $_POST['classe'];
 		$servicos = $_POST['servicos'];
-		$query = "UPDATE usuario SET nome = '$nome', DataN = '$DataN', email = '$email', telefone= '$telefone', paisSai= '$paisSai', paisDes= '$paisDes', DataS= '$DataS' , DataR = '$DataR', classe = '$classe', servicos= '$servicos', query= '$query' WHERE id_usuario = $id_usuario";
+
+		$query = "UPDATE usuario SET nome = '$nome', DataN = '$DataN', email = '$email', telefone = '$telefone', paisSai = '$paisSai', paisDes = '$paisDes', DataS= '$DataS' , DataR = '$DataR', classe = '$classe', servicos = '$servicos' WHERE id_usuario = $id_usuario";
 	
 		$consulta = mysqli_query($conexaoBD, $query);
 	

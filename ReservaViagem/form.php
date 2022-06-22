@@ -10,20 +10,22 @@ include 'menu.php';
     <title>Cadastro PHP</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="trabbd.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <script type="text/javascript" src="jquery.js"></script>
 </head>
 
 <body>
 
 <div id="cnt">
-        <a href="#form" class="btn btn-dark">RESERVAS</a>
         <h1 class="cnt2">Viva uma experiência incrível!</h1>
         <h5>Reserve sua viagem! Venha viver momentos únicos com a gente!</h5>
+        <a href="#form" class="btn btn-dark">RESERVAS</a>
     </div>
 
     <br>
     <br>
     <br>
+
     <section class="bcgb">  <div class="container">
         <br>
         <h1 class="cnt">Formulário para Reserva de Viagem</h1>
@@ -49,7 +51,7 @@ include 'menu.php';
             <br>
 
             <div class="row mb-3">
-                <div class="col-sm-8">
+                <div class="col-sm-8">                 
                     Email: <input type="email" name="email" placeholder="exemplo@exemplo.com" class="form-control form-control-sm" id="email" required>
                 </div>
                 <div class="col-sm-4">
@@ -92,9 +94,9 @@ include 'menu.php';
                     <label>Classe da Viagem:</label>
                     <select class="form-control-sm" name="classe" >
                         <option>...</option>
-                        <option>Classe Econômica</option>
-                        <option>Classe Empresarial</option>
-                        <option>Primeira Classe</option>
+                        <option value="ClasseEC">Classe Econômica</option>
+                        <option value="ClasseEM">Classe Empresarial</option>
+                        <option value="PC">Primeira Classe</option>
                     </select>
                 </div>
             </div>
@@ -149,6 +151,39 @@ include 'menu.php';
 </div>
             
     <br>
+    
+<button onclick="backToTop()" id="btnTop"><img src="img/capslock.svg" alt="TOPO"></button>
+
+
+<script type="text/javascript" src="jquery.js"></script>
+
+<script>
+jQuery(document).ready(function($){
+    $(".scroll").click(function(event){
+        event.preventDefault();
+        $('html, body').animate({scrollTop:$(this.hash).offset().top}, 600);
+    });
+});
+</script> 
+
+<script>
+    window.onscroll = function(){
+        scroll();
+    }
+    function scroll(){
+        var btn= document.getElementById("btnTop");
+        if(document.documentElement.scrollTop > 200){
+          btn.style.display="block";
+        }
+        else{
+            btn.style.display="none";
+        }
+    }
+    function backToTop(){
+        document.documentElement.scrollTop=0;
+    }
+</script>
+
     <script src="mask.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"></script>
