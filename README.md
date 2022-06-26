@@ -8,7 +8,7 @@ Um projeto desenvolvido em uma disciplina do Curso Técnico em Informática na E
 <br>
   <p> • Procure o local onde o projeto está e o selecione (Caso o projeto seja baixado em ZIP, é necessário extraí-lo antes de procura-lo)
   <p> • Para executá-lo, necessita instalar o JQuery, BootsTrap, Banco de Dados.
-  <p> • É necessário também a instalação do Xaamp, quando abrir, clique em START no ícone do Banco de Dados e PHP.
+  <p> • É necessário também a instalação do Xampp, quando abrir, clique em START no ícone do Apache e MySQL.
   <p> • Após isso, entre no navegador e coloque na pesquisa de URL: localhost/php/ReservaViagem/home.php
   
     
