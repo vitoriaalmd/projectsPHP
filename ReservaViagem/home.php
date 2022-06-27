@@ -113,7 +113,7 @@ include 'menu.php';
     <section class="bcgb">
     <br>
            <br>
-           <div class="container1234">
+           <div class="container">
              <div class="row mb-1">
                <div class="col-sm-4">
                 <h1 class="cnt10">
