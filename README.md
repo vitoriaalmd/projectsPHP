@@ -15,8 +15,8 @@ Um projeto desenvolvido em uma disciplina do Curso Técnico em Informática na E
 
   
 
-| [<img src="https://avatars.githubusercontent.com/u/105250635?v=4" width=115><br><sub>Letícia Lima</sub>](https://github.com/lettxys) |  [<img src="" width=115><br><sub>Mikael Diogo</sub>](https://github.com/MikaelDiogo) |  [<img src="https://avatars.githubusercontent.com/u/8989346?v=4" width=115><br><sub>Alex Felipe</sub>](https://github.com/alexfelipe) |
-| :---: | :---: | :---: |
+| [<img src="https://avatars.githubusercontent.com/u/105250635?v=4" width=115><br><sub>Letícia Lima</sub>](https://github.com/lettxys) |  [<img src="" width=115><br><sub>Mikael Diogo</sub>](https://github.com/MikaelDiogo) |  [<img src="https://avatars.githubusercontent.com/u/8989346?v=4" width=115><br><sub>Manuela Aurélio</sub>](https://github.com/) |   [<img src="https://avatars.githubusercontent.com/u/8989346?v=4" width=115><br><sub>Manuela Aurélio</sub>](https://github.com/) |
+| :---: | :---: | :---: | :---: |
 
     
   
