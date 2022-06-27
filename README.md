@@ -1,4 +1,4 @@
-<h1 aling="center"> Reserva Viagem</h1>
+<h1 aling="center"> Miracles </h1>
 Um projeto desenvolvido em uma disciplina do Curso Técnico em Informática na Escola Estadual de Educação Profissional Manoel Mano.
 É um sistema com intuito de facilitar a busca por passagens aéreas, aluguel de veículos e acesso a inúmeros hotéis de acordo com seu destino.
 
@@ -15,7 +15,7 @@ Um projeto desenvolvido em uma disciplina do Curso Técnico em Informática na E
 
   
 
-| [<img src="https://avatars.githubusercontent.com/u/105250635?v=4" width=115><br><sub>Letícia Lima</sub>](https://github.com/lettxys) |  [<img src="" width=115><br><sub>Mikael Diogo</sub>](https://github.com/MikaelDiogo) |  [<img src="https://avatars.githubusercontent.com/u/108244185?v=4" width=115><br><sub>Manuela Aurélio</sub>](https://github.com/mavaur) |   [<img src="https://avatars.githubusercontent.com/u/102155572?v=4" width=115><br><sub>Vitória Almeida</sub>](https://github.com/vitoriaalmd) |
+| [<img src="https://avatars.githubusercontent.com/u/105250635?v=4" width=115><br><sub>Letícia Lima</sub>](https://github.com/lettxys) |  [<img src="" width=115><br><sub>Mikael Diogo</sub>](https://github.com/MikaelDiogo) |  [<img src="" width=115><br><sub>Manuela Aurélio</sub>](https://github.com/mavaur) |   [<img src="https://avatars.githubusercontent.com/u/102155572?v=4" width=115><br><sub>Vitória Almeida</sub>](https://github.com/vitoriaalmd) |
 | :---: | :---: | :---: | :---: |
 
     
