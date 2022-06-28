@@ -16,7 +16,29 @@ include 'menu.php';
 </head>
 
 <body>
-    
+<style>
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: gray; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: gray; 
+}
+</style>
 <header>
     <div id="cnt">
         <h1 class="cnt2">Viva uma experiência incrível!</h1>
@@ -42,20 +64,20 @@ include 'menu.php';
             <div class="quadrado">
                      <div class="img-container">
                      <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?ixlib=rb-1.2.1&raw_url=true&q=80&fm=jpg&crop=entropy&cs=tinysrgb&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=386" />
-                        <span class="textd"> <p> Manarola, Itália </p> </span>     
+                        <span class="textd"> <p> Manarola, Itália </p> <p>Distrito da comuna de Riomaggiore, na província de la Spezia.  Um dos trechos de maior atração turística da Riviera da Ligúria.</p></span>     
                         <br>
                      </div>
                     </div>
                     <div class="quadrado">
                     <div class="img-container">
                         <img src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=383&q=80" />  
-                        <span class="textd"><p> Veneza, Itália </p></span>                  
+                        <span class="textd"><p> Veneza, Itália </p><p>A capital da região de Vêneto,  é formada por mais de 100 pequenas ilhas em uma lagoa no Mar Adriático.</p></span>                  
                     </div>
                     </div>
                     <div class="quadrado">
                     <div class="img-container">
                         <img src="https://images.unsplash.com/photo-1518684079-3c830dcef090?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387" />
-                        <span class="textd"><p> Dubai, Emirados Árabes </p></span>
+                        <span class="textd"><p> Dubai, Emirados Árabes </p><p> Conhecida pelos shoppings de luxo, pela arquitetura ultramoderna e pela animada vida noturna. </p></span>
                     </div>
                     </div>
                 <br>
